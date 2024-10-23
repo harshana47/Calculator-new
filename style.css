@@ -1,0 +1,137 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+.calculator {
+    max-width: 300px;
+    margin: 90px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+h1 {
+    color: black;
+    text-align: center;
+}
+button {
+    padding: 20px;
+    margin: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    flex: 1 0 23%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+body.dark {
+    background-color: #121212;
+}
+
+.calculator.dark {
+    background-color: #1e1e1e;
+}
+
+h1.dark {
+    color: #ffffff;
+}
+.mode.dark{
+    background-color: #1e1e1e;
+}
+
+button.dark {
+    background-color: #333;
+    color: #ffffff;
+}
+.mode{
+    position: absolute;
+    top: 95px;
+    right: 0;
+    cursor: pointer;
+    left: 600px;
+    box-shadow: 0 0 0;
+    background: transparent;
+    width: 60px;
+    height: 60px;
+}
+#display.dark {
+    background-color: #333;
+    color: #ffffff;
+}
+button img {
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    left: 16px;
+    position: absolute;
+    background-color: white;
+}
+button.number {
+    background-color: #333;
+    color: #fff;
+}
+button.top3{
+    background-color: #615959;
+    color: #fff;
+}
+button.special {
+    background-color: #FF9500;
+    color: #fff;
+}
+#display {
+    color: black;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 88%;
+}
+.long {
+    width: 100px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+}
+.eq{
+    width: 135px;
+    height: 60px;
+    border-radius: 40px;
+}
+.history {
+    background: white;
+    display: none;
+    border-radius: 0 8px 8px 0;
+    padding: 20px;
+    margin-left: 60.5%;
+    position: absolute;
+    top: 35%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+.history h2 {
+    font-size: 1.5em;
+}
+.history ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.history li {
+    margin: 5px 0;
+}
+.historybtn{
+    position: absolute;
+    top: 95px;
+    right: 600px;
+    background-color: white;
+    box-shadow: 0 0 0;
+}
+

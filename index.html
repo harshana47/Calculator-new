@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <input id="display" readonly>
+        <div class="button-container">
+            <button class="mode" onclick="toggleDarkMode()">
+                <img src="../Cal-new/assets/images/img.png" alt="Dark Mode" />
+            </button>
+            <!-- Top row -->
+            <div class="top-row">
+                <button class="top3 circle" onclick="modulus()">%</button>
+                <button class="top3 circle" onclick="fn('*')">x</button>
+                <button class="top3 circle" onclick="fn('/')">÷</button>
+                <button class="special circle" onclick="feraser()">E</button>
+            </div>
+            <!-- Row 1 -->
+            <div class="row">
+                <button class="number circle" onclick="fn('7')">7</button>
+                <button class="number circle" onclick="fn('8')">8</button>
+                <button class="number circle" onclick="fn('9')">9</button>
+                <button class="special circle" onclick="fn('-')">-</button>
+            </div>
+            <!-- Row 2 -->
+            <div class="row">
+                <button class="number circle" onclick="fn('4')">4</button>
+                <button class="number circle" onclick="fn('5')">5</button>
+                <button class="number circle" onclick="fn('6')">6</button>
+                <button class="special circle" onclick="fn('+')">+</button>
+            </div>
+            <!-- Row 3 -->
+            <div class="row">
+                <button class="number circle" onclick="fn('1')">1</button>
+                <button class="number circle" onclick="fn('2')">2</button>
+                <button class="number circle" onclick="fn('3')">3</button>
+                <button class="special circle" onclick="clearDisplay()">AC</button>
+            </div>
+            <!-- Bottom row -->
+            <div class="bottom-row">
+                <button class="number circle" onclick="fn('.')">.</button>
+                <button class="number circle" onclick="fn('0')">0</button>
+                <button class="special eq" onclick="eq()">=</button>
+            </div>
+        </div>
+        <button class="historybtn" onclick="toggleHistory()">🔍</button>
+    </div>
+    <div class="history" id="history">
+        <h2>History</h2>
+        <ul id="historyList"></ul>
+    </div>
+    <script src="script.js"></script>
+<script src="../Cal-new/assets/lib/jquery-3.7.1.min.js"></script>
+</body>
+
+
+</html>
